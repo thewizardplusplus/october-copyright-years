@@ -9,7 +9,7 @@ class CopyrightYearsGenerator
     public static function getStartYear()
     {
         return self::getYear(
-            function($query_builder, $timestamp_field) {
+            function ($query_builder, $timestamp_field) {
                 return $query_builder->min($timestamp_field);
             }
         );
@@ -18,7 +18,7 @@ class CopyrightYearsGenerator
     public static function getEndYear()
     {
         return self::getYear(
-            function($query_builder, $timestamp_field) {
+            function ($query_builder, $timestamp_field) {
                 return $query_builder->max($timestamp_field);
             }
         );
