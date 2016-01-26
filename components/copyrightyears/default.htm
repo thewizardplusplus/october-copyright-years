@@ -1,1 +1,2 @@
-Copyright Years component.
+{% set startYear, endYear = __SELF__.startYear, __SELF__.endYear %}
+{{ startYear }}{{ endYear != startYear ? "-#{endYear}" }}
