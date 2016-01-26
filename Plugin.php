@@ -10,10 +10,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'Copyright Years',
-            'description' =>
-                'Provides the component for calculation and displaying of '
-                . 'copyright years.',
+            'name' => LangUtils::plugin('name'),
+            'description' => LangUtils::plugin('description'),
             'author' => 'thewizardplusplus',
             'icon' => 'icon-copyright',
             'homepage' =>

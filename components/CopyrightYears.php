@@ -2,6 +2,7 @@
 namespace Thewizardplusplus\CopyrightYears\Components;
 
 use Cms\Classes\ComponentBase;
+use Thewizardplusplus\CopyrightYears\LangUtils;
 
 class CopyrightYears extends ComponentBase
 {
@@ -11,8 +12,8 @@ class CopyrightYears extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Copyright Years',
-            'description' => 'Calculate and display of copyright years.'
+            'name' => LangUtils::plugin('name'),
+            'description' => LangUtils::name('component.description')
         ];
     }
 
