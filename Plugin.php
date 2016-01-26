@@ -20,4 +20,12 @@ class Plugin extends PluginBase
                 'https://github.com/thewizardplusplus/october-copyright-years'
         ];
     }
+
+    public function registerComponents()
+    {
+        return [
+            'Thewizardplusplus\CopyrightYears\Components\CopyrightYears' =>
+                'copyrightYears'
+        ];
+    }
 }
